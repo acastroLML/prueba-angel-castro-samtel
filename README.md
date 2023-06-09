@@ -144,9 +144,13 @@ Es necesario tener networking para:
 - Container Registry  
 - Cluster Kubernetes  
 
-se debe crear una subnet por cada uno. Se crea la Vnet y adentro de ella tres subnets. 
+Se debe crear una subnet por cada uno. Se crea la Vnet y adentro de ella tres subnets. 
 
 Se require un Private Endpoint.
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/subnets.png)
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/networking_success.png)
 
 8. Crea un endpoint externo accesible (ingress) para la aplicación  
 9. Sube al repo en una carpeta environment todos los yaml de k8s. 
