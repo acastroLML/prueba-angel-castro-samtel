@@ -126,6 +126,15 @@ Conexion con el CLI de Azure
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/terraform_apply.png)
 
 
+### Backend Remote State
+
+Inicializacion del Backend
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/BackendInitialization.png)
+
+Estado del Container
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/estadoContainer.png)
 
 
 
