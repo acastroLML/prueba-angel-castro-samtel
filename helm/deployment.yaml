@@ -1,0 +1,80 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "{{ .Values.nombre_app }}"
+  namespace: "{{ .Values.ns_app }}"
+spec:
+  selector:
+    matchLabels:
+      app: "{{ .Values.nombre_app }}"
+      name: "{{ .Values.nombre_app }}"
+  template:
+    metadata:
+      labels:
+        name: "{{ .Values.nombre_app }}"
+        app: "{{ .Values.nombre_app }}"
+    spec:
+      containers:
+        - name: {{ .Values.nombre_app }}
+          image: {{ .Values.image }}
+          ports:
+            - containerPort: {{ .Values.puerto_app }}
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              port: {{ .Values.puerto_app }}
+              path: /
+            initialDelaySeconds: 12
+            timeoutSeconds: 10
+          readinessProbe:
+            httpGet:
+              port: {{ .Values.puerto_app }}
+              path: /
+            initialDelaySeconds: 12
+            timeoutSeconds: 10
+          resources:
+            limits:
+              memory: 0.5Gi
+            requests:
+              cpu: 1
+              memory: 0.5Gi
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: "{{ .Values.nombre_app }}"
+  namespace: "{{ .Values.ns_app }}"
+spec:
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: {{ .Values.puerto_app }}
+  - name: https
+    protocol: TCP
+    port: 443
+    targetPort: {{ .Values.puerto_app }}
+  selector:
+    app: "{{ .Values.nombre_app }}"
+
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: "{{ .Values.nombre_app }}"
+  namespace: "{{ .Values.ns_app }}"
+  annotations:
+    appgw.ingress.kubernetes.io/backend-path-prefix: "/"
+    kubernetes.io/ingress.class: azure/application-gateway
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        backend:
+          service:
+            name: "{{ .Values.nombre_app }}"
+            port:
+              number: 80
+        pathType: Prefix
