@@ -86,39 +86,53 @@ Crear nginx.default.conf
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/AngelDocker.png)
 
 
+7.  Despliega la app a un clúster de kubernetes (minikube o EKS o AKS).
 
 ### Infrastructure as code
 
-archivos:
+Se configura en el portal de Azure un Grupo de Recursos y se establece un **subscrition_id (Azure se enlace con Terraform)**.    
+
+Resource Group Azure : cloud project   
+
+Para la Infraestructura tenemos los siguientes archivos iniciales:   
 
     main.tf   
-    variables.tf   
+    variables.tf   (variables Terra)
+        - region general
+        - tags general
+        - nombre del grupo de recurso
     terraform.tfvars  
 
+Conexion con el CLI de Azure  
+
+    $ az login 
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/az_login.png)
+
+    $ terraform init
 
 
-subscrition_id (Azure se enlace con Terraform)
-variables Terra
-region general
-tags general
-nombre del grupo de recurso
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/terraform_init.png)
+
+    $ terraform plan
 
 
-$ az login
-
-$ terraform init
-$ terraform plan
-$ terraform apply
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/terraform_plan.png)
 
 
-image evidence 3 anteriores
+    $ terraform apply
+
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/terraform_apply.png)
 
 
 
 
 
-REsource Group Azure : cloud project  
 
 
 
+
+8. Crea un endpoint externo accesible (ingress) para la aplicación  
+9. Sube al repo en una carpeta environment todos los yaml de k8s. 
 
