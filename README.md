@@ -66,6 +66,8 @@ Se levanta el contenedor para no hacer la instalación en el computador.:
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/docker-compose-sonar-terminal.png)
 
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/AngelSonar.png)
+
 
 ## Crear Dockerfile
 
@@ -81,7 +83,7 @@ Crear nginx.default.conf
     $ docker run -it -p 8080:80 --rm --name angel-test angel-test
 
 
-
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/AngelDocker.png)
 
 
 
