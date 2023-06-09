@@ -88,7 +88,7 @@ Crear nginx.default.conf
 
 7.  Despliega la app a un clúster de kubernetes (minikube o EKS o AKS).
 
-### Infrastructure as code
+### Infrastructure as code - Cluster Kubernetes
 
 Se configura en el portal de Azure un Grupo de Recursos y se establece un **subscrition_id (Azure se enlace con Terraform)**.    
 
@@ -158,9 +158,34 @@ Se require un Private Endpoint. Vinculo entre el Azure Container Registry (ACR) 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/containerRegistrySuccess.png)
 
 
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/azurecontainerregistry.png)
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/azurecontainerRegistry.png)
+
+
+#### Aplication GateWay
+
+
 
 8. Crea un endpoint externo accesible (ingress) para la aplicación  
+
+#### Despliegue de la aplicacion en Kubernetes
+
+
+
+
+#### Agente Azure para Release
+
+El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y permite ejecutar los jobs de los pipelines
+
+
+
+#### Pipeline
+
+
+
+
+#### Release
+
+
 
 
 9. Sube al repo en una carpeta environment todos los yaml de k8s.   
