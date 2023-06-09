@@ -161,7 +161,15 @@ Se require un Private Endpoint. Vinculo entre el Azure Container Registry (ACR) 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/azurecontainerRegistry.png)
 
 
-#### Aplication GateWay
+#### Aplication GateWay + IP Publica
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/cluster_AKS.png)
+
+
+#### AKS Azure Kubernetes Service
+
+
+#### Virtual Machine Azure DevOps + IP Publica
 
 
 
@@ -169,7 +177,7 @@ Se require un Private Endpoint. Vinculo entre el Azure Container Registry (ACR) 
 
 #### Despliegue de la aplicacion en Kubernetes
 
-
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/resources_cluster_terra.png)
 
 
 #### Agente Azure para Release
