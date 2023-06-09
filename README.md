@@ -166,6 +166,9 @@ Se require un Private Endpoint. Vinculo entre el Azure Container Registry (ACR) 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/cluster_AKS.png)
 
 
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/load_balancer.png)
+
+
 #### AKS Azure Kubernetes Service
 
 
@@ -188,13 +191,15 @@ El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y per
 
 #### Pipeline
 
-
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/repositoryImages.png)
 
 
 #### Release
 
 
-
-
 9. Sube al repo en una carpeta environment todos los yaml de k8s.   
+
+ Ver carpeta: Helm
+
+
 
