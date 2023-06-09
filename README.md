@@ -142,16 +142,26 @@ Estado del Container
 Es necesario tener networking para:   
 - Application gateway  
 - Container Registry  
-- Cluster Kubernetes  
+- Cluster Kubernetes  (AKS: Azure Kubernetes Service)
 
 Se debe crear una subnet por cada uno. Se crea la Vnet y adentro de ella tres subnets. 
-
-Se require un Private Endpoint.
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/subnets.png)
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/networking_success.png)
 
+
+#### Cantainer Registry y Private Endpoint
+
+Se require un Private Endpoint. Vinculo entre el Azure Container Registry (ACR) y la vnet por el backbone de Azure. 
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/containerRegistrySuccess.png)
+
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/azurecontainerregistry.png)
+
 8. Crea un endpoint externo accesible (ingress) para la aplicación  
-9. Sube al repo en una carpeta environment todos los yaml de k8s. 
+
+
+9. Sube al repo en una carpeta environment todos los yaml de k8s.   
 
