@@ -34,7 +34,8 @@ Creacion Proyecto Vue.js
     $ npm run build
 
 
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/main/img-evidences/app_despleg_localhost.png)
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/app_despleg_localhost.png)
+
 
 
 
