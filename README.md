@@ -87,8 +87,37 @@ Crear nginx.default.conf
 
 
 
+### Infrastructure as code
+
+archivos:
+
+    main.tf   
+    variables.tf   
+    terraform.tfvars  
 
 
+
+subscrition_id (Azure se enlace con Terraform)
+variables Terra
+region general
+tags general
+nombre del grupo de recurso
+
+
+$ az login
+
+$ terraform init
+$ terraform plan
+$ terraform apply
+
+
+image evidence 3 anteriores
+
+
+
+
+
+REsource Group Azure : cloud project  
 
 
 
