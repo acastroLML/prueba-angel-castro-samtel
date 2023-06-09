@@ -126,9 +126,9 @@ Conexion con el CLI de Azure
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/terraform_apply.png)
 
 
-### Backend Remote State
+#### Backend Remote State
 
-Inicializacion del Backend
+Inicializacion del Backend. Se configura un backend tipo remoto para definir donde terraform almacenara sus archivos de estado y para que varios desarrolladores puedan interactuar con terraform al mismo tiempo.
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/BackendInitialization.png)
 
@@ -137,10 +137,16 @@ Estado del Container
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/estadoContainer.png)
 
 
+#### Networking
 
+Es necesario tener networking para:   
+- Application gateway  
+- Container Registry  
+- Cluster Kubernetes  
 
+se debe crear una subnet por cada uno. Se crea la Vnet y adentro de ella tres subnets. 
 
-
+Se require un Private Endpoint.
 
 8. Crea un endpoint externo accesible (ingress) para la aplicación  
 9. Sube al repo en una carpeta environment todos los yaml de k8s. 
