@@ -1,0 +1,31 @@
+version: '3'
+services:
+  #SonarQube
+  web:
+    container_name: sonarqube-web
+    image: sonarqube:7.1
+    depends_on:
+      - "mysql"
+    environment:
+      - SONARQUBE_JDBC_USERNAME=root
+      - SONARQUBE_JDBC_PASSWORD=sonar
+      - SONARQUBE_JDBC_URL=jdbc:mysql://sonarqube-db:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance&useSSL=false
+    volumes:
+      - ${PWD}/sonar-qube-data:/opt/sonarqube/data
+      - ${PWD}/sonar-qube-extensions:/opt/sonarqube/extensions
+    ports:
+      - "9000:9000"
+  #Base de datos para SonarQube
+  mysql:
+    container_name: sonarqube-db
+    image: mysql:5.6
+    environment:
+      - MYSQL_DATABASE=sonar
+      - MYSQL_ROOT_PASSWORD=sonar
+      - MYSQL_ROOT_HOST=%
+    volumes:
+      - ${PWD}/sonar-db-volume:/var/lib/mysql
+volumes:
+  sonar-qube-data:
+  sonar-qube-extensions:
+  sonarqube-db-volume:
