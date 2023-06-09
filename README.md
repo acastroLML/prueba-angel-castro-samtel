@@ -200,6 +200,11 @@ El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y per
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/AngelVueWeb.png)
 
 
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/credentials.png)
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/service_connection.png)
+
+
 9. Sube al repo en una carpeta environment todos los yaml de k8s.   
 
  Ver carpeta: Helm
