@@ -37,6 +37,35 @@ Creacion Proyecto Vue.js
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/app_despleg_localhost.png)
 
 
+3. Compila la aplicación luego de pasar el analisis de sonarqube.  
+
+4. Agregar dos escenarios:
+    1 - analisis fallido
+    2 - analisis exitoso  
+
+
+### Correr contenedor SonarQube (local)
+
+Se utiliza para evaluar la calidad de codigo (linter) y cobertura de pruebas (CodeCoverage). 
+
+Se levanta el contenedor para no hacer la instalación en el computador.:
+    - Teniendo Docker instalado   
+    - Crear carpeta local con permisos de lectura y escritura, para los volumenes persistentes de los contenedores   
+    - Bajar el docker-compose.yml de SonarQube y guardarlo en la carpeta creada
+    - Luego ejecutar (desde la ruta de la carpeta)  
+
+        $ docker-compose up
+        $ docker ps
+
+    - la interfaz grafica se despliega en local:   http://localhost:9000  
+    - Para vincular con la applicacion web (trabajada), crear el archivo: sonar-project.properties   
+    - Install sonar-scanner   
+    - Run:   
+
+        $  sonar-scanner
+
+
+
 
 
 
