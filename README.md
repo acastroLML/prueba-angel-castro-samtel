@@ -176,22 +176,21 @@ Se require un Private Endpoint. Vinculo entre el Azure Container Registry (ACR) 
 
 #### Virtual Machine Azure DevOps + IP Publica
 
+El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y permite ejecutar los jobs de los pipelines
 
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/virtual_machine.png)
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/virtual_machine_2.png)
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/resources_cluster_terra.png)
 
-8. Crea un endpoint externo accesible (ingress) para la aplicación  
 
-#### Despliegue de la aplicacion en Kubernetes
-
-
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/kubectl.png)
+#### Service Principal para Azure Devops
 
 
-#### Agente Azure para Release
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/credentials.png)
 
-El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y permite ejecutar los jobs de los pipelines
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/service_connection.png)
+
 
 #### Azure DevOps   
 
@@ -206,12 +205,25 @@ El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y per
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/import_repo_reduce.png)
 
 
-#### Service Principal para Azure Devops
+#### Despliegue en Azure Devops
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/artifact.png)
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/pipeline.png)
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/variables_3.png)
+
+8. Crea un endpoint externo accesible (ingress) para la aplicación  
+
+#### Despliegue de la aplicacion en Kubernetes
 
 
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/credentials.png)
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/kubectl.png)
 
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/service_connection.png)
+
+
+
+
 
 
 #### Pipeline
@@ -229,11 +241,7 @@ El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y per
 
 
 
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/artifact.png)
 
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/pipeline.png)
-
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/variables_3.png)
 
 9. Sube al repo en una carpeta environment todos los yaml de k8s.   
 
