@@ -209,7 +209,7 @@ El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y per
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/artifact.png)
 
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/pipeline.png)
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/pipeline_final.png)
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/variables_3.png)
 
