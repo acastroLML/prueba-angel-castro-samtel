@@ -217,21 +217,13 @@ El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y per
 
 #### Despliegue de la aplicacion en Kubernetes
 
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/repositoryImages.png)
+
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/kubectl.png)
 
 
-
-
-
-
-
-#### Pipeline
-
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/repositoryImages.png)
-
-
-#### Release
+#### Resultado Final
 
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/AngelVueWeb.png)
