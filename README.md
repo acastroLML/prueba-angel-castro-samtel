@@ -194,6 +194,12 @@ El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y per
     - Project description:  Proyecto de Azure DevOps que incluye todo el ciclo de desarrollo para una aplicacion vue.js  
     - link: https://dev.azure.com/AngelCastro-org1/project-angel-test  
 
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/azureDevops_portal.png)
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/import_repo_reduce.png)
+
+
 #### Pipeline
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/repositoryImages.png)
