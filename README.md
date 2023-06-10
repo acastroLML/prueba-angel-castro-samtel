@@ -230,11 +230,6 @@ El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y per
 
 
 
-
-
-
-
-
 9. Sube al repo en una carpeta environment todos los yaml de k8s.   
 
  Ver carpeta: Helm
