@@ -165,7 +165,7 @@ Se require un Private Endpoint. Vinculo entre el Azure Container Registry (ACR) 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/azurecontainerRegistry.png)
 
 
-#### Aplication GateWay + IP Publica
+#### AKS (Azure Kubernetes Service) + Application Gateway
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/cluster_AKS.png)
 
@@ -173,19 +173,17 @@ Se require un Private Endpoint. Vinculo entre el Azure Container Registry (ACR) 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/load_balancer.png)
 
 
-#### AKS Azure Kubernetes Service
-
 
 #### Virtual Machine Azure DevOps + IP Publica
 
 
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/virtual_machine.png)
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/resources_cluster_terra.png)
 
 8. Crea un endpoint externo accesible (ingress) para la aplicación  
 
 #### Despliegue de la aplicacion en Kubernetes
-
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/resources_cluster_terra.png)
-
 
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/kubectl.png)
@@ -208,6 +206,14 @@ El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y per
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/import_repo_reduce.png)
 
 
+#### Service Principal para Azure Devops
+
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/credentials.png)
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/service_connection.png)
+
+
 #### Pipeline
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/repositoryImages.png)
@@ -219,9 +225,7 @@ El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y per
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/AngelVueWeb.png)
 
 
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/credentials.png)
 
-![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/service_connection.png)
 
 
 
