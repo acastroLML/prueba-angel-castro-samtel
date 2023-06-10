@@ -66,6 +66,10 @@ Se levanta el contenedor para no hacer la instalación en el computador.:
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/docker-compose-sonar-terminal.png)
 
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/scanner.png)
+
+
+
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/AngelSonar.png)
 
 
