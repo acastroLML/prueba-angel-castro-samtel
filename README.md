@@ -187,7 +187,12 @@ Se require un Private Endpoint. Vinculo entre el Azure Container Registry (ACR) 
 
 El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y permite ejecutar los jobs de los pipelines
 
+#### Azure DevOps   
 
+    - Organization:  AngelCastro-org1  
+    - project:   project-angel-test  (Private)  
+    - Project description:  Proyecto de Azure DevOps que incluye todo el ciclo de desarrollo para una aplicacion vue.js  
+    - link: https://dev.azure.com/AngelCastro-org1/project-angel-test  
 
 #### Pipeline
 
@@ -204,6 +209,13 @@ El agente esta dentro de la vnet y se conecta con el cluster de kubernetes y per
 
 ![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/service_connection.png)
 
+
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/artifact.png)
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/pipeline.png)
+
+![despliegue localhost](https://github.com/acastroLML/prueba-angel-castro-samtel/blob/main/img-evidences/variables.png)
 
 9. Sube al repo en una carpeta environment todos los yaml de k8s.   
 
